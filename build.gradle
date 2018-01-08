@@ -47,7 +47,7 @@ task webpack(type: NodeTask) {
   script = file('node_modules/webpack/bin/webpack.js')
   environment = [
     "NODE_ENV": "production",
-    "GATE_HOST": "spinnaker-api-prestaging.prod.netflix.net",
+    "GATE_HOST": "http://ec2-52-88-226-181.us-west-2.compute.amazonaws.com:8084/",
   ]
 }
 
