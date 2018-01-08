@@ -8,6 +8,10 @@ module.exports = angular.module('spinnaker.loadBalancer.configure.kubernetes.adv
       $scope.loadBalancer.externalIps.push({});
     };
 
+    this.listExternalIp = function() {
+      console.log($scope.loadBalancer.externalIps.toString());
+    };
+
     this.removeExternalIp = function(index) {
       $scope.loadBalancer.externalIps.splice(index, 1);
     };
